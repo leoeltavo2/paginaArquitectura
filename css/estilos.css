@@ -1,0 +1,247 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h2,h3{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.lin{
+    line-height: 50px;
+    font-weight: 300;
+    text-shadow: 1px 1px black;
+}
+.imagen{
+    background-image: url("https://blog.educacionit.com/wp-content/uploads/2019/04/blog-educacionit-17.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.navbar-nav{
+    text-shadow: 1px 1px black;
+}
+
+.imagen .navbar-toggler{
+    border: 1px solid white;
+    font-size: 20px;
+    
+}
+.nav-item:hover{
+    background:#426e805e ;
+}
+/* quienes somos */
+.quien{
+    background: #426e805e ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 400px;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.quien h1{
+font-weight: 700;
+}
+
+/* aside */
+div.icono-menu{
+    margin:10px 0 0 20px;
+    width: 50px;
+    
+}
+ .icono-menu i{
+    margin: auto;
+    display: none;
+    max-width: 30px;
+    max-height: 30px;
+}
+.aside{
+    width: 15%;
+    max-height: calc(100vh);
+    text-align: center;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid black;
+    background: #F1F8F8;
+}
+.aside .temas button{
+    width: 100%;
+    border: 1px solid blue;
+    margin-bottom: 5px;
+}
+
+/* main */
+.main{
+    width: 85%;
+    margin-top: 10px;
+}
+.arqui{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.arqui p{
+    max-width: 800px;
+    text-align: left;
+}
+
+/* objetivo */
+.objetivo{
+    background: #ECFDFC;
+    padding: 20px;
+}
+
+/* perfil */
+.perfil{
+    height: 600px;
+}
+.perfil .card{
+    border: none;
+}
+.perfil img{
+    position: absolute;
+    right: 120px;
+}
+/* PROFESORES */
+.profesores{
+    background:#ECFDFC;
+    padding: 20px;
+}
+.profesores .cursor:hover{
+    box-shadow: 1px 5px 12px black;
+    transition: .5s;
+    /* #b9c9ff */
+}
+
+/* DATOS */
+.datos .cursor-view{
+    cursor: zoom-in;
+}
+.datos .modal-dialog{
+    max-width: 800px;
+}
+.datos .info{
+    max-width: 900px;
+}
+/* GALERIA */
+.galeria h2{
+    margin-top: 200px;
+}
+.galeria .carousel-inner img {
+    height: 100%
+} 
+
+.galeria .carousel-inner{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.galeria .carousel-control-next-icon,
+.galeria .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+}
+.galeria .carousel-indicators li {
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+  }
+
+  /* especialidades */
+  .dif{
+      background: #ECFDFC;
+  }
+  .dif .especialidades{
+      width: 80%;
+  }
+.dif .especialidades img{
+    width: 300px;
+    max-height: 200px;
+}
+.dif .especialidades .parrafo{
+    width: 500px;
+}
+
+
+/* footer */
+footer{
+    background: #b0cecc;
+}
+footer.page-footer ul li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin: 15px 0;
+}
+footer .iconos i{
+    font-size: 40px;
+    line-height: 70px;
+}
+footer .iconos .fa-facebook-square{
+color: #3b5998;
+}
+footer .iconos .fa-facebook-square:hover{
+color: #001998;
+}
+footer .iconos .fa-youtube-square{
+color: #ff0000;
+}
+footer .iconos .fa-youtube-square:hover{
+    color: #a01000;
+}
+
+/* MEDIAS */
+    @media screen and (max-width:1300px){
+      .perfil img{
+          width: 200px;
+          right: 80px;
+      }
+    }
+    @media screen and (max-width:1200px){
+      
+        .icono-menu i{
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .aside{
+            display: none;
+            position: absolute;
+            top: auto;
+            width: 220px;
+        }
+        
+        /* footer */
+        footer .container .columna3{
+           margin: auto;
+        }
+    }
+    @media screen and (max-width:950px){
+      .perfil img{
+         display: none;
+      }
+    }
+@media screen and (max-width:780px){
+    footer .container .columna1, .columna2 {
+        margin: auto;
+    }
+    .objetivo .card{
+        margin: auto;
+    }
+   .galeria .carousel-inner img {
+    height: 200px;
+}
+}
+@media screen and (max-width:480px){
+ .imagen nav{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+}
